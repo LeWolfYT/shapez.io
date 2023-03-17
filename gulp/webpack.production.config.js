@@ -12,8 +12,8 @@ module.exports = ({
     environment,
     es6 = false,
 
-    standalone = false,
-    isBrowser = true,
+    standalone = true,
+    isBrowser = false,
 
     chineseVersion = false,
     wegameVersion = false,
