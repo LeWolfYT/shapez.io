@@ -13,7 +13,7 @@ module.exports = ({
     es6 = false,
 
     standalone = true,
-    isBrowser = false,
+    isBrowser = true,
 
     chineseVersion = false,
     wegameVersion = false,
