@@ -105,9 +105,6 @@ export class ModLoader {
     }
 
     exposeExports() {
-        if (G_IS_STEAM_DEMO) {
-            return;
-        }
 
         if (G_IS_DEV || G_IS_STANDALONE) {
             let exports = {};
@@ -140,16 +137,6 @@ export class ModLoader {
     }
 
     async initMods() {
-        if (G_IS_STEAM_DEMO) {
-            this.initialized = true;
-            return;
-        }
-
-        if (!G_IS_STANDALONE && !G_IS_DEV) {
-            this.initialized = true;
-            return;
-        }
-
         // Create a storage for reading mod settings
         const storage = G_IS_STANDALONE
             ? new StorageImplElectron(this.app)
