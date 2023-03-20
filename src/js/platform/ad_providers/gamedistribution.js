@@ -35,15 +35,11 @@ export class GamedistributionAdProvider extends AdProviderInterface {
     }
 
     getHasAds() {
-        return true;
+        return false;
     }
 
     getCanShowVideoAd() {
-        return (
-            this.getHasAds() &&
-            !this.videoAdResolveFunction &&
-            performance.now() - this.lastVideoAdShowTime > minimumTimeBetweenVideoAdsMs
-        );
+        return false;
     }
 
     initialize() {
