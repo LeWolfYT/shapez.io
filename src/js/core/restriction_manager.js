@@ -56,7 +56,7 @@ export class RestrictionManager extends ReadWriteProxy {
      * @returns {boolean}
      */
     isLimitedVersion() {
-        return true;
+        return false;
     }
 
     /**
