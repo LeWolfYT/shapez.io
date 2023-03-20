@@ -34,7 +34,7 @@ export class ClientAPI {
     }
 
     isLoggedIn() {
-        return Boolean(this.token);
+        return true;
     }
 
     /**
@@ -85,15 +85,7 @@ export class ClientAPI {
     }
 
     tryLogin() {
-        return this.apiTryLogin()
-            .then(({ token }) => {
-                this.token = token;
-                return true;
-            })
-            .catch(err => {
-                logger.warn("Failed to login:", err);
-                return false;
-            });
+        return true;
     }
 
     /**
