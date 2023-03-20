@@ -14,11 +14,7 @@ export class ModsState extends TextualGameState {
     }
 
     get modsSupported() {
-        return (
-            !WEB_STEAM_SSO_AUTHENTICATED &&
-            !G_IS_STEAM_DEMO &&
-            (G_IS_STANDALONE || (G_IS_DEV && !window.location.href.includes("demo")))
-        );
+        return true;
     }
 
     internalGetFullHtml() {
