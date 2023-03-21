@@ -36,7 +36,7 @@ module.exports = ({
                 abstract:
                     "window.assert(false, 'abstract method called of: ' + (this.name || (this.constructor && this.constructor.name)));",
                 G_HAVE_ASSERT: "true",
-                G_APP_ENVIRONMENT: JSON.stringify("stable"),
+                G_APP_ENVIRONMENT: JSON.stringify("prod"),
                 G_CHINA_VERSION: JSON.stringify(chineseVersion),
                 G_WEGAME_VERSION: JSON.stringify(wegameVersion),
                 G_GOG_VERSION: JSON.stringify(gogVersion),
